@@ -1,0 +1,35 @@
+body{
+    background-image: url("https://analyticalscience.wiley.com/cms/asset/ca32b508-69e7-48a5-a1fc-799a8ba8136e/dna-repair.jpg");   
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+    display:flex;
+    justify-content:center;
+    flex-direction: column;
+}
+
+h1{
+    color: black;
+    text-align: center;
+    text
+}
+
+.dna-content{
+    background-color: rgba(132, 222, 252, 0.418);
+}
+
+#CONVERT{
+    color:cyan;
+    background-color:deeppink;
+}
+
+#dnaInput{
+    width:300px;
+    text-align:left;
+    padding:10px ;
+    font-size:1rem;
+    color:
+}
+
