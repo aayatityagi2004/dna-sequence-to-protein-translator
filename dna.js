@@ -37,7 +37,11 @@ convert.addEventListener('click', ()=>  {
     let DNAsequence = [];
     DNAsequence = document.getElementById("dnaInput").value.toUpperCase();
     let mRNAsequence = [];
-    for(let i =0; i<DNAsequence.length; i++){
+    if (DNAsequence.length % 3 !== 0) {
+    alert("DNA sequence length is invalid. It must be a multiple of 3.");
+    return;
+}else{ 
+      for(let i =0; i<DNAsequence.length; i++){
         if(!["A", "T", "G", "C"].includes(DNAsequence[i])){
         result.innerText = `Invalid dna sequence input.`
         return;
@@ -47,6 +51,7 @@ convert.addEventListener('click', ()=>  {
         mRNAsequence[i]=DNAsequence[i];
     }
 } 
+     }
 
 let PROTEINsequence = [];
 for(let i=0; i<mRNAsequence.length; i+=3){
@@ -66,3 +71,4 @@ for(let i=0; i<mRNAsequence.length; i+=3){
     result.innerText=`The mRNA sequence is: ${mRNAsequence}\nThe protein sequence is: ${PROTEINsequence}`;
 }
 );
+
