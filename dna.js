@@ -38,7 +38,7 @@ convert.addEventListener('click', ()=>  {
     DNAsequence = document.getElementById("dnaInput").value.toUpperCase();
     let mRNAsequence = [];
     if (DNAsequence.length % 3 !== 0) {
-    alert("DNA sequence length is invalid. It must be a multiple of 3.");
+    result.innerText='DNA sequence length is invalid. It must be a multiple of 3.'
     return;
 }else{ 
       for(let i =0; i<DNAsequence.length; i++){
@@ -71,4 +71,5 @@ for(let i=0; i<mRNAsequence.length; i+=3){
     result.innerText=`The mRNA sequence is: ${mRNAsequence}\nThe protein sequence is: ${PROTEINsequence}`;
 }
 );
+
 
