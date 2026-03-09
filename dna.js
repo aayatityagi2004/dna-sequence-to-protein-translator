@@ -3,7 +3,7 @@ const codonTable = {
   "UUA": "L", "UUG": "L",
   "CUU": "L", "CUC": "L", "CUA": "L", "CUG": "L",
   "AUU": "I", "AUC": "I", "AUA": "I",
-  "AUG": "M", // start
+  "AUG": "M", 
   "GUU": "V", "GUC": "V", "GUA": "V", "GUG": "V",
 
   "UCU": "S", "UCC": "S", "UCA": "S", "UCG": "S",
@@ -68,6 +68,7 @@ for(let i=0; i<mRNAsequence.length; i+=3){
     result.innerText=`The mRNA sequence is: ${mRNAsequence}\nThe protein sequence is: ${PROTEINsequence}`;
 }
 );
+
 
 
 
