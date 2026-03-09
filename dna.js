@@ -56,9 +56,6 @@ convert.addEventListener('click', ()=>  {
 let PROTEINsequence = [];
 for(let i=0; i<mRNAsequence.length; i+=3){
     const codon=mRNAsequence.slice(i,i+3).join("");
-    if (codon.length<3){
-        break;
-    }
     const aminoAcid=codonTable[codon];
     if(!aminoAcid){
         result.innerText=`invalid input sequence`;
@@ -71,5 +68,6 @@ for(let i=0; i<mRNAsequence.length; i+=3){
     result.innerText=`The mRNA sequence is: ${mRNAsequence}\nThe protein sequence is: ${PROTEINsequence}`;
 }
 );
+
 
 
